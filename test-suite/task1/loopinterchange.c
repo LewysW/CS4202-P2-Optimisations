@@ -6,6 +6,7 @@ void run_loop_interchange() {
 	static int a[N][N];
 	static int b[N][N];
 
+	//Initialise arrays with values
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
 			c[i][j] = i * j;
@@ -14,6 +15,7 @@ void run_loop_interchange() {
 		}
 	}
 
+	//Perform action to be interchanged
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
 			for (int k = 0; k < N; k++) {

@@ -12,10 +12,10 @@ int main(int argc, char* argv[]) {
                 run_loop_interchange();
                 break;
             case 'd':
+                run_loop_distribution();
                 break;
             case 'b':
                 break;
-
         }
     }
 

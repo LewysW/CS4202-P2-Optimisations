@@ -4,4 +4,5 @@
 #include <stdlib.h>
 
 void run_loop_interchange();
+void run_loop_distribution();
 #endif
