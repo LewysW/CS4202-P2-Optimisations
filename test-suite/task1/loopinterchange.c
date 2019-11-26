@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "optimisations.h"
 #define N 100
 
-int main(void) {
+void run_loop_interchange() {
 	static int c[N][N];
 	static int a[N][N];
 	static int b[N][N];
