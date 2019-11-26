@@ -20,7 +20,7 @@ void run_loop_distribution() {
         d[i] = (d[i - 1] * i) % LIMIT;
     }
 
-    //Portion to distribute into two loops
+    //Perform action to be distributed
     for (int i = 1; i < N; i++) {
         a[i] = c[i] * c[i - 1];
         printf("a[%d]: %d\n", i, a[i]);

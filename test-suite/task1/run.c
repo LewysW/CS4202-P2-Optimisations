@@ -7,6 +7,7 @@ int main(int argc, char* argv[]) {
     if ((opt = getopt(argc, argv, "uidbf:")) != -1) {
         switch (opt) {
             case 'u':
+                run_loop_unrolling();
                 break;
             case 'i':
                 run_loop_interchange();

@@ -5,4 +5,5 @@
 
 void run_loop_interchange();
 void run_loop_distribution();
+void run_loop_unrolling();
 #endif
