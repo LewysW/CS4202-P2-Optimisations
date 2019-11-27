@@ -9,7 +9,7 @@ void run_delete_null_checks() {
     for (int i = 0; i < N; i++) {
       //check should be removed if optimisation applied
       if ((arr + i) != NULL) {
-        printf("%d\n", arr + i);
+        printf("%p\n", arr + i);
       }
     }
 }
