@@ -4,7 +4,7 @@
 int main(int argc, char* argv[]) {
     int opt;
 
-    if ((opt = getopt(argc, argv, "uidbf:")) != -1) {
+    if ((opt = getopt(argc, argv, "uidnf:")) != -1) {
         switch (opt) {
             case 'u':
                 run_loop_unrolling();
@@ -15,7 +15,10 @@ int main(int argc, char* argv[]) {
             case 'd':
                 run_loop_distribution();
                 break;
-            case 'b':
+            case 'n':
+                run_delete_null_checks();
+                break;
+            case 'f':
                 break;
         }
     }
