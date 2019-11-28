@@ -1,9 +1,11 @@
 #include "optimisations.h"
 #include "signal.h"
+#define N 1000000
 
 void run_delete_null_checks() {
-    //Both versions of the program raise a segmentation fault
-    //skip straight to this stage and reduce code size at
-    //the cost of debug information
+    int x = 42;
+    int* ptrptr = malloc(sizeof(int) * N);
+    ptrptr[0] = x;
+    //optimises away all code after segmentation fault
     raise(SIGSEGV);
 }
