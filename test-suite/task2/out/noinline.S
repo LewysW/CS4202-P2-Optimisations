@@ -13,7 +13,7 @@ run_inline_functions:
 	pxor	%xmm5, %xmm5
 	movdqa	.LC1(%rip), %xmm2
 	pcmpeqd	%xmm7, %xmm7
-	movl	$arr.2847, %eax
+	movl	$arr.2848, %eax
 	movdqa	%xmm5, %xmm8
 	movq	%rax, %xmm6
 	xorl	%eax, %eax
@@ -79,8 +79,8 @@ run_inline_functions:
 	.cfi_endproc
 .LFE6:
 	.size	run_inline_functions, .-run_inline_functions
-	.local	arr.2847
-	.comm	arr.2847,400000000,32
+	.local	arr.2848
+	.comm	arr.2848,400000000,32
 	.section	.rodata.cst16,"aM",@progbits,16
 	.align 16
 .LC0:

@@ -4,7 +4,7 @@
 int main(int argc, char* argv[]) {
     int opt;
 
-    if ((opt = getopt(argc, argv, "uinf")) != -1) {
+    if ((opt = getopt(argc, argv, "uinfc")) != -1) {
         switch (opt) {
             case 'u':
                 run_loop_unrolling();
@@ -17,6 +17,9 @@ int main(int argc, char* argv[]) {
                 break;
             case 'f':
                 run_inline_functions();
+                break;
+            case 'c':
+                run_cross_jumping();
                 break;
         }
     }

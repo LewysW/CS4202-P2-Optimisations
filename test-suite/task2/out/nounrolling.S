@@ -11,7 +11,7 @@ run_loop_unrolling:
 .LFB22:
 	.cfi_startproc
 	movdqa	.LC0(%rip), %xmm8
-	movl	$a.2886, %eax
+	movl	$a.2887, %eax
 	movdqa	.LC1(%rip), %xmm14
 	movdqa	.LC2(%rip), %xmm13
 	leaq	400000000(%rax), %rdx
@@ -141,7 +141,7 @@ run_loop_unrolling:
 	movaps	%xmm1, -16(%rax)
 	cmpq	%rax, %rdx
 	jne	.L2
-	movl	$a.2886+200000000, %eax
+	movl	$a.2887+200000000, %eax
 	movl	(%rax), %esi
 	movl	$.LC9, %edi
 	xorl	%eax, %eax
@@ -149,8 +149,8 @@ run_loop_unrolling:
 	.cfi_endproc
 .LFE22:
 	.size	run_loop_unrolling, .-run_loop_unrolling
-	.local	a.2886
-	.comm	a.2886,400000000,32
+	.local	a.2887
+	.comm	a.2887,400000000,32
 	.section	.rodata.cst16,"aM",@progbits,16
 	.align 16
 .LC0:

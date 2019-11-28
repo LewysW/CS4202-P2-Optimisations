@@ -12,9 +12,9 @@ run_loop_interchange:
 	.cfi_startproc
 	movdqa	.LC1(%rip), %xmm2
 	movdqa	.LC0(%rip), %xmm4
-	movl	$num.2886, %esi
+	movl	$num.2887, %esi
 	xorl	%edx, %edx
-	movl	$num.2886+40000, %ecx
+	movl	$num.2887+40000, %ecx
 .L2:
 	movd	%edx, %xmm5
 	movq	%rsi, %rax
@@ -33,7 +33,7 @@ run_loop_interchange:
 	leaq	40000(%rax), %rcx
 	cmpl	$10000, %edx
 	jne	.L2
-	movl	$num.2886+200010000, %eax
+	movl	$num.2887+200010000, %eax
 	movl	(%rax), %esi
 	movl	$.LC2, %edi
 	xorl	%eax, %eax
@@ -41,8 +41,8 @@ run_loop_interchange:
 	.cfi_endproc
 .LFE22:
 	.size	run_loop_interchange, .-run_loop_interchange
-	.local	num.2886
-	.comm	num.2886,400000000,32
+	.local	num.2887
+	.comm	num.2887,400000000,32
 	.section	.rodata.cst16,"aM",@progbits,16
 	.align 16
 .LC0:

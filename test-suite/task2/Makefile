@@ -1,7 +1,7 @@
 all: clean run manual
 
-manual: interchange unrolling nullpointer inlining
-	gcc ./out/run.o ./out/nointerchange.o ./out/nounrolling.o ./out/nonullpointerchecks.o ./out/noinline.o -o ./out/manual
+manual: interchange unrolling nullpointer inlining crossjumping
+	gcc ./out/run.o ./out/nointerchange.o ./out/nounrolling.o ./out/nonullpointerchecks.o ./out/noinline.o ./out/nocrossjumping.o -o ./out/manual
 
 run:
 	gcc -c -o ./out/run.o ./src/run.c
@@ -21,6 +21,10 @@ nullpointer:
 inlining:
 	gcc -Wall -c -O3 -fno-inline -o ./out/noinline.o ./src/inlinefunctions.c
 	gcc -Wall -c -O3 -fno-inline -S -o ./out/noinline.S ./src/inlinefunctions.c
+
+crossjumping:
+	gcc -Wall -c -fno-crossjumping -o ./out/nocrossjumping.o ./src/crossjumping.c
+	gcc -Wall -c -fno-crossjumping -S -o ./out/nonoinline.S ./src/crossjumping.c
 
 clean: 
 	rm -rf ./out/*
