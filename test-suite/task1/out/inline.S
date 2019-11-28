@@ -12,7 +12,7 @@ run_inline_functions:
 	.cfi_startproc
 	pxor	%xmm4, %xmm4
 	movdqa	.LC1(%rip), %xmm2
-	movl	$arr.2913, %eax
+	movl	$arr.2914, %eax
 	movdqa	.LC0(%rip), %xmm3
 	movdqa	%xmm4, %xmm6
 	movq	%rax, %xmm5
@@ -83,8 +83,8 @@ comparison:
 	.cfi_endproc
 .LFE23:
 	.size	comparison, .-comparison
-	.local	arr.2913
-	.comm	arr.2913,400000000,32
+	.local	arr.2914
+	.comm	arr.2914,400000000,32
 	.section	.rodata.cst16,"aM",@progbits,16
 	.align 16
 .LC0:

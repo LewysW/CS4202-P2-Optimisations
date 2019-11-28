@@ -30,7 +30,7 @@ run_inline_functions:
 	.p2align 4,,10
 	.p2align 3
 .L4:
-	leaq	arr.2850(,%rdx,4), %rdi
+	leaq	arr.2851(,%rdx,4), %rdi
 	movq	%rdx, %rsi
 	call	comparison
 	cmpl	$1, %eax
@@ -49,7 +49,7 @@ run_inline_functions:
 	.cfi_endproc
 .LFE6:
 	.size	run_inline_functions, .-run_inline_functions
-	.local	arr.2850
-	.comm	arr.2850,400000000,32
+	.local	arr.2851
+	.comm	arr.2851,400000000,32
 	.ident	"GCC: (GNU) 9.2.1 20190827 (Red Hat 9.2.1-1)"
 	.section	.note.GNU-stack,"",@progbits
