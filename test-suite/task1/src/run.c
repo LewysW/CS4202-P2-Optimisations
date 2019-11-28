@@ -4,6 +4,7 @@
 int main(int argc, char* argv[]) {
     int opt;
 
+    //Selects code fragment to run
     if ((opt = getopt(argc, argv, "uinfc")) != -1) {
         switch (opt) {
             case 'u':
