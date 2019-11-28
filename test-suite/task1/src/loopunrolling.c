@@ -1,6 +1,8 @@
 #include "optimisations.h"
 #define N 1000000
 
+//Optimisation works
+
 void run_loop_unrolling() {
     static int a[N];
 

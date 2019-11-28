@@ -1,15 +1,15 @@
 #include "optimisations.h"
 #define N 1000000
 
-void run_delete_null_checks() {
-    //Allocates int array of length N
-    int* arr = malloc(sizeof(int) * N);
+//Optimisation works
 
-    //Iterates through array and prints value if not null
+void run_delete_null_checks() {
+    int x = 42;
+    int* ptrptr = malloc(sizeof(int) * N);
+    int* ptr = NULL;
     for (int i = 0; i < N; i++) {
-      //check should be removed if optimisation applied
-      if ((arr + i) != NULL) {
-        printf("%p\n", arr + i);
-      }
+        if (*ptr) {
+            printf("%d\n", *ptr);
+        }
     }
 }

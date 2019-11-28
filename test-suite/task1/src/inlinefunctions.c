@@ -4,6 +4,8 @@
 #define EVEN 0
 #define ODD 1
 
+//Optimisation works
+
 int comparison(int* x, long y);
 
 void run_inline_functions() {
@@ -19,7 +21,7 @@ void run_inline_functions() {
 
 //Function to inline,
 //Returns whether exlusive or of address and y is odd or even
-int comparison(int* x, long y) {
+inline int comparison(int* x, long y) {
   uintptr_t xor_ptr = (uintptr_t)x ^ y;
 
   if (xor_ptr % 2 == 0) {
