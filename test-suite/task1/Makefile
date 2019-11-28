@@ -28,8 +28,8 @@ nullpointer:
 	gcc -Wall -c -O3 -fno-delete-null-pointer-checks -S -o ./out/nonullpointerchecks.S ./src/nullpointerchecks.c
 
 inlining:
-	gcc -Wall -c -O3 -finline-functions -o ./out/inline.o ./src/inlinefunctions.c
-	gcc -Wall -c -O3 -finline-functions -S -o ./out/inline.S ./src/inlinefunctions.c
+	gcc -Wall -c -O3 -finline -o ./out/inline.o ./src/inlinefunctions.c
+	gcc -Wall -c -O3 -finline -S -o ./out/inline.S ./src/inlinefunctions.c
 	gcc -Wall -c -O3 -fno-inline -o ./out/noinline.o ./src/inlinefunctions.c
 	gcc -Wall -c -O3 -fno-inline -S -o ./out/noinline.S ./src/inlinefunctions.c
 

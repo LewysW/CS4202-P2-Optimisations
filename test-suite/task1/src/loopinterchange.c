@@ -1,12 +1,10 @@
 #include "optimisations.h"
-#define N 100
+#define N 10000
 
 //Optimisation works
 
-void run_loop_interchange();
-
 void run_loop_interchange() {
-	int num[N][N];
+	static int num[N][N];
 
     for (int j = 0; j < N; j++) {
         for (int i = 0; i < N; i++) {
